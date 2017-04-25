@@ -1,7 +1,10 @@
 # palette
 Atari Lynx programming tutorial working with the color palette.
 
-Here we show the default palette
+Here we show the default palette.
+
+The code will first clear the screen, display a header, then print the hex values twice: once against a black background and another time against a white background.
+
 
 ## Requirements
 

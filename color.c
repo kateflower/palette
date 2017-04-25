@@ -7,6 +7,10 @@
 
 // These header files are related to the processor family, the Lynx and the TGI libraries.
 
+
+// The code will first clear the screen, display a header, then print the hex values twice: once against 
+// a black background and another time against a white background.
+
 //  this array will contain a string “tgi” that indicates that the loading of the driver was successful.
 extern char lynxtgi[]; 
 
@@ -83,6 +87,7 @@ void main(void)  {
   while (1)
   {
     tgi_setpalette(tgi_getdefpalette());
+    // The call to show_palette is made from the main loop.
     show_palette("Default palette");
   };
 }
